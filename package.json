@@ -1,0 +1,27 @@
+{
+  "name": "first-bolt-app",
+  "version": "1.0.0",
+  "description": "first-bolt-app for bot",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "build:watch": "tsc -w -p .",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [
+    "bolt",
+    "slack",
+    "bot"
+  ],
+  "author": "ohe1013",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.18.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
